@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 export default class FriendZone extends Component {
+
+    // Render method
     render() {
         return (
             <div>
