@@ -29,8 +29,9 @@ export default class FriendBox extends Component {
         // JSX
         return (
             <div>
+                <h3>Add a new friend:</h3>
                 <input type="text" onChange={this.handleChange}/>
-                <button onClick={ () => addFriend(this.state.userInput) }>Click me</button>
+                <button className="btn btn-primary" onClick={ () => addFriend(this.state.userInput) }>Click me</button>
             </div>
         );
     }

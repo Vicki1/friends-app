@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import FriendZone from './components/FriendZone';
 import FriendBox from './components/FriendBox';
 
+import './index.css';
+
 class App extends Component {
 // Constructor to create state and bind functions to this
   // Note that since this is the parent component, we don't need to pass in props
@@ -37,20 +39,24 @@ class App extends Component {
 
     // JSX
     return (
-      <div>
+      <div className="appComponent">
         <h1>App Component</h1>
 
         {/*
           Rendering the FriendZone component
-          - passing it the current friends list on state through props
+          - passing it the current friends list on state through as props
         */}
-        <FriendZone listOfFriends={this.state.friends}/>
+        <div className="friendZone">
+          <FriendZone listOfFriends={this.state.friends}/>
+        </div>
         
         {/*
           Rendering the FriendBox component
           - passing it the addFriend function as props
         */}
-        <FriendBox addFriend={this.addFriend}/>
+        <div className="friendBox">
+          <FriendBox addFriend={this.addFriend}/>
+        </div>
       
       </div>
     );

@@ -6,7 +6,7 @@ export default class FriendZone extends Component {
     render() {
         return (
             <div>
-                <h1>FriendZone Component</h1>
+                <h1>The FriendZone:</h1>
                 <ol>
                     {
                         this.props.listOfFriends.map( (friend, i) => {
